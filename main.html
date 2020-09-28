@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div class="container">
+        <section id="head">
+        <h1 id="title">What is Your Favorite Food?</h1>
+        <p id="description">Thank you for taking the time to help us improve our concept!</p>
+        </section>
+        
+       
+        <form id="survey-form">
+          <section id="info">
+            <label id="name-label" for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="enter your name" required/>
+      
+            <label id='email-label' for="email">Email</label>
+          <input type="email-label" name="email" id="email" placeholder="enter your Email" required/>
+          <br>
+            
+            <label id="number-label" for="number">Age <span class="clue">(optional)</span></label>
+          <input type="number" id="number" name="number" placeholder="age" min="10" max="99">
+            
+            <label id="city-label" for="city"> Where do you live?</label>
+            <select id="dropdown" name="city" class="form-control" required>
+              <option disabled selected value>Select current city</option>
+              <option value="seoul">Seoul</option>
+              <option value="tokyo">Tokyo</option>
+              <option value="sanhai">Sanhai</option>
+              <option value="Thai">Thai</option>
+            </select>
+      <section>
+          
+         <section id="favor">
+          <h3>What's your favor?</h3>
+       <label> <input type="radio" name="favor" value="noodle" checked="true">Noodle</label>
+           <label><input type="radio" name="favor" value="rice">Rice</label>
+      
+          </section>
+        
+          <section id="cultrue">
+            <h3>What's your favor cultural food?<span class="clue">(check all that apply)</span></h3>
+            <label><input name="food" value="Korean Food" type="checkbox" class="input-checkbox"/>Korean Food</label>
+            <label><input name="food" value="Japanese Food" type="checkbox" class="input-checkbox">Japanese Food</label>
+            <label><input name="food" value="Thai Food" type="checkbox"class="input-checkbox">Thai Food</label>
+            <label><input name="food" value="Chinese Food" type="checkbox"class="input-checkbox">Chinese Food</label>
+            <label><input name="food" value="Vietnamese Food" type="checkbox"class="input-checkbox">Vietnamese Food</label>
+            
+          </section>
+         
+            <section id="form-group">
+            <label><h3>Any comments or recommendations?</h3></label>
+        <textarea placeholder="please describe any food you do like" id="comments" class="input-textarea" name="comment"></textarea>
+        </section>
+        
+        <div class="form=-group">
+          <button type="submit" id="submit" class="submit-btn">Submit</button>
+          </div>
+        </form>
+      
+        
+      </div>
+</body>
+</html>
